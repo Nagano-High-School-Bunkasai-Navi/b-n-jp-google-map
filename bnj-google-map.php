@@ -1,11 +1,12 @@
 <?php
 /**
  * Plugin Name: 長野県高等学校文化祭Navi Google Map 管理
- * Plugin URI: https://github.com/smasato/b-n-jp-google-map
+ * Plugin URI: https://github.com/bunkasai-nagano-jp/plugin-google-map
  * Description: 長野県高等学校文化祭Naviの Google Map 管理を行います
  * Version: 0.1
  * Author: Masato Sugiyama
  * Author URI: https://github.com/smasato
+ *
  * License: GPL2
  */
 
