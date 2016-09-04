@@ -26,8 +26,13 @@ function bunj_get_gmap_url( $school_name ) {
 	return  $url;
 }
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+/**
+ * GoogleMapを表示
+ *
+ * @since 0.1
+ * @param string $school_name 高校名.
  */
-
+function bunj_the_gmap( $school_name ) {
+	$url = bunj_get_gmap_url( $school_name );
+	echo '<iframe src="' . esc_url( $url ) . '"></iframe>';
+}
