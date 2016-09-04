@@ -10,16 +10,21 @@
  */
 
 /**
-Copyright 2016 Masato Sugiyama (email : sugiyama@masato.nagano.jp)
+ * GoogleMap埋め込みURLを取得する
+ *
+ * @since 0.1
+ * @param string $school_name 高校名.
+ *
+ * @return string GoogleMap埋め込みURL
+ */
+function bunj_get_gmap_url( $school_name ) {
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License, version 2, as
-	published by the Free Software Foundation.
+	$base           = 'https://www.google.com/maps/embed/v1/place?';
+	$google_api_key = 'AIzaSyBfgN4KnKmCL5-Wv3hS-LbQPtsxi_xXdRE';
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+	$url = $base . 'key=' . $google_api_key . '&q=' . rawurlencode( $school_name );
+	return  $url;
+}
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
