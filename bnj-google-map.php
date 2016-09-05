@@ -28,6 +28,17 @@ function bunj_get_gmap_url( $school_name ) {
 }
 
 /**
+ * GoogleMap埋め込みURLを表示する
+ *
+ * @since 0.1
+ * @param string $school_name 高校名.
+ */
+function bunj_the_gmap_url( $school_name ) {
+
+	echo esc_url( bunj_get_gmap_url( $school_name ) );
+}
+
+/**
  * GoogleMapを表示
  *
  * @since 0.1
